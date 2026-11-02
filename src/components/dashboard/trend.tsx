@@ -24,16 +24,16 @@ export default function Trend({
     >
       <ResponsiveContainer>
         <LineChart data={data}>
-          <CartesianGrid stroke="#263449" vertical={false} />
-          <XAxis dataKey="date" stroke="#94A3B8" tick={{ fontSize: 11 }} />
-          <YAxis domain={[0, 100]} stroke="#94A3B8" tick={{ fontSize: 11 }} />
+          <CartesianGrid stroke="#E8EAED" vertical={false} />
+          <XAxis dataKey="date" stroke="#5F6368" tick={{ fontSize: 11 }} />
+          <YAxis domain={[0, 100]} stroke="#5F6368" tick={{ fontSize: 11 }} />
           <Tooltip
-            contentStyle={{ background: "#172438", borderColor: "#263449" }}
+            contentStyle={{ background: "#FFFFFF", borderColor: "#DADCE0" }}
           />
           <Line
             dataKey="score"
             type="monotone"
-            stroke="#34D399"
+            stroke="#1A73E8"
             strokeWidth={2}
             dot={{ r: 3 }}
             isAnimationActive={false}

@@ -48,7 +48,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
       </a>
       <aside id="primary-sidebar" className={menu ? "sidebar open" : "sidebar"}>
         <Link href="/" className="brand">
-          <Shield size={32} fill="currentColor" stroke="#0B1220" />
+          <Shield size={32} fill="currentColor" stroke="#FFFFFF" />
           <span>
             IRONGATE<small>YOUR DIGITAL FORTRESS</small>
           </span>

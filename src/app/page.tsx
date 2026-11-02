@@ -77,17 +77,19 @@ export default function Home() {
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
           <div className="orbit orbit-three" />
-          <div className="orbit-label label-a">
-            <Globe size={15} /> YOUR WEBSITE
-          </div>
           <div className="shield-emblem">
             <ShieldCheck size={112} strokeWidth={1} />
           </div>
-          <div className="orbit-label label-b">
-            <LockKeyhole size={14} /> PRIVATE BY DESIGN
-          </div>
-          <div className="orbit-label label-c">
-            <Eye size={14} /> PASSIVE ANALYSIS
+          <div className="orbit-labels">
+            <div className="orbit-label label-a">
+              <Globe size={15} /> YOUR WEBSITE
+            </div>
+            <div className="orbit-label label-b">
+              <LockKeyhole size={14} /> PRIVATE BY DESIGN
+            </div>
+            <div className="orbit-label label-c">
+              <Eye size={14} /> PASSIVE ANALYSIS
+            </div>
           </div>
           <div className="fortress-caption">
             <span className="dot" /> CLARITY IS YOUR FIRST LINE OF DEFENSE
@@ -222,7 +224,7 @@ export default function Home() {
           ].map(([n, title, text]) => (
             <div className="how-step" key={n}>
               <span>{n}</span>
-              <h4>{title}</h4>
+              <h3>{title}</h3>
               <p>{text}</p>
             </div>
           ))}
